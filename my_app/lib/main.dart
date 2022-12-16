@@ -37,7 +37,9 @@ class Home extends StatelessWidget {
                       'Tanggal Jatuh Tempo',
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
-                        color: Color(0xFFAFABAB),
+                        color: Color(0xFFAFABAB)
+                        ,
+                        fontFamily: 'Poppins'
                       ),
                     ),
                   ),
@@ -50,6 +52,7 @@ class Home extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       color: Colors.black,
+                      fontFamily: 'Poppins'
                     ),
                   ),
                 ],
@@ -68,16 +71,19 @@ class Home extends StatelessWidget {
                   Text(
                     'BCA Virtual Account',
                     style: TextStyle(
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w700,
                         color: Colors.black,
-                        fontSize: 25),
+                        fontSize: 20,
+                        fontFamily: 'Poppins'
+                        ),
+                        
                   ),
                   const SizedBox(
                     height: 6,
                   ),
                   Text(
                     'Transaksi Kredit dan Debit',
-                    style: TextStyle(color: Colors.grey[500]),
+                    style: TextStyle(color: Colors.grey[500], fontFamily: 'Poppins'),
                   ),
                 ],
               ),
@@ -102,7 +108,8 @@ class Home extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.w500,
                         color: Colors.grey[500],
-                        fontSize: 16),
+                        fontSize: 16,
+                        fontFamily: 'Poppins'),
                   ),
                   const SizedBox(
                     height: 6,
@@ -112,7 +119,8 @@ class Home extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.black,
                         fontSize: 20,
-                        fontWeight: FontWeight.w500),
+                        fontWeight: FontWeight.w500,
+                        fontFamily: 'Poppins'),
                   ),
                 ],
               ),
@@ -132,9 +140,10 @@ class Home extends StatelessWidget {
               const Text(
                 'Total Tagihan',
                 style: TextStyle(
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w700,
                     color: Colors.black,
-                    fontSize: 24),
+                    fontSize: 20,
+                    fontFamily: 'Poppins'),
               ),
               const SizedBox(
                 height: 5,
@@ -144,7 +153,8 @@ class Home extends StatelessWidget {
                 style: TextStyle(
                     fontWeight: FontWeight.w600,
                     color: Color.fromARGB(255, 246, 103, 93),
-                    fontSize: 28),
+                    fontSize: 28,
+                    fontFamily: 'Poppins'),
               ),
             ],
           ),
@@ -154,7 +164,7 @@ class Home extends StatelessWidget {
           const Text(
             'Detail Belanja',
             style: TextStyle(
-                fontWeight: FontWeight.w500, color: Colors.black, fontSize: 23),
+                fontWeight: FontWeight.w700, color: Colors.black, fontSize: 20, fontFamily: 'Poppins'),
           ),
           const SizedBox(
             height: 5,
@@ -170,14 +180,16 @@ class Home extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
                           color: Colors.grey[500],
-                          fontSize: 16),
+                          fontSize: 16,
+                          fontFamily: 'Poppins'),
                     ),
                     Text(
                       'Rp 1.772.500',
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
                           color: Colors.grey[500],
-                          fontSize: 16),
+                          fontSize: 16,
+                          fontFamily: 'Poppins'),
                     ),
                   ],
                 ),
@@ -192,14 +204,16 @@ class Home extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
                           color: Colors.grey[500],
-                          fontSize: 16),
+                          fontSize: 16,
+                          fontFamily: 'Poppins'),
                     ),
                     Text(
                       'Rp 12.000',
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
                           color: Colors.grey[500],
-                          fontSize: 16),
+                          fontSize: 16,
+                          fontFamily: 'Poppins'),
                     ),
                   ],
                 ),
@@ -214,14 +228,16 @@ class Home extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
                           color: Colors.grey[500],
-                          fontSize: 16),
+                          fontSize: 16,
+                          fontFamily: 'Poppins'),
                     ),
                     Text(
                       'Rp 1.000',
                       style: TextStyle(
                           fontWeight: FontWeight.w500,
                           color: Colors.grey[500],
-                          fontSize: 16),
+                          fontSize: 16,
+                          fontFamily: 'Poppins'),
                     ),
                   ],
                 ),
@@ -233,7 +249,7 @@ class Home extends StatelessWidget {
           ),
           Text(
             'Pesanan akan dikonfirmasi oleh penjual apabila proses pembayaran telah berhasil.',
-            style: TextStyle(color: Colors.grey[500]),
+            style: TextStyle(color: Colors.grey[500], fontFamily: 'Poppins'),
           ),
           const SizedBox(
             height: 10,
@@ -244,16 +260,16 @@ class Home extends StatelessWidget {
               // Do something when button is pressed
               print('Clicked');
             },
-            child: const Text('Halaman Utama'),
+            child: const Text('Halaman Utama', style: TextStyle(fontFamily: 'Poppins'),),
           ),
           OutlinedButton(
-            style: OutlinedButton.styleFrom(side: BorderSide(color: Color(0xFF1c6758), width: 2),),
+            style: OutlinedButton.styleFrom(side: BorderSide(color: Color(0xFF1c6758), width: 2, ),  ),
             onPressed: () {
               // Do something when button is pressed
               print('Clicked');
             },
             child: const Text('Cek Status Pembayaran',
-            style: TextStyle(color: Color(0xFF1c6758)),),
+            style: TextStyle(color: Color(0xFF1c6758), fontFamily: 'Poppins'), ),
           ),
         ],
       ),
